@@ -1,0 +1,73 @@
+---
+import '../styles/tailwind.css';
+import Button from '../components/Button.astro'
+
+---
+<section id="buy" class="max-w-md mx-auto p-4">
+<h2 class="text-3xl font-semibold mb-5">Køb bogen</h2>
+<div>
+   <form action="#" method="POST">
+    <div class="mb-4 flex items-center space-x-8">
+                <label for="number" class="block text-sm font-medium text-gray-700">Antal</label>
+                <input type="number" id="number" name="number" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#272635] focus:border-[#272635] sm:text-sm">
+            </div>
+            
+  <div class="mb-4 flex items-center space-x-4">
+    <label class="flex items-center space-x-2">
+      <input type="radio" id="radio1" name="delivery" value="option1" required class="form-radio h-4 w-4 text-[#272635] border-gray-300 focus:ring-[#272635]">
+      <span class="text-sm">Levering</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input type="radio" id="radio2" name="delivery" value="option2" required class="form-radio h-4 w-4 text-[#272635] border-gray-300 focus:ring-[#272635]">
+      <span class="text-sm">Hent selv</span>
+    </label>
+    </div></div>
+            
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Navn</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#272635] focus:border-[#272635] sm:text-sm">
+            </div>
+
+            <div class="mb-4">
+                <label for="address" class="block text-sm font-medium text-gray-700">Adresse</label>
+                <input type="text" id="text" name="text" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#272635] focus:border-[#272635] sm:text-sm">
+            </div>
+
+  <div class="mb-4 flex items-center space-x-4">
+    <div class="flex flex-col w-1/3">
+      <label for="postnummer" class="text-sm font-medium text-gray-700">Postnummer</label>
+      <input type="text" id="postnummer" name="postnummer" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#272635] focus:border-[#272635] sm:text-sm">
+    </div>
+    <div class="flex flex-col flex-grow">
+      <label for="by" class="text-sm font-medium text-gray-700">By</label>
+      <input type="text" id="by" name="by" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#272635] focus:border-[#272635] sm:text-sm">
+    </div>
+  </div>
+</div>
+
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#272635] focus:border-[#272635] sm:text-sm">
+            </div>
+
+            <div class="mb-4">
+                <label for="address" class="block text-sm font-medium text-gray-700">Telefon</label>
+                <input type="text" id="text" name="text" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#272635] focus:border-[#272635] sm:text-sm">
+            </div>
+
+            <div class="mb-4 flex items-center space-x-2">
+    <input type="checkbox" id="checkbox" name="checkbox" class="h-4 w-4 text-[#272635] focus:ring-[#272635] border-gray-300 rounded">
+    <label for="checkbox" class="text-sm font-medium text-gray-700">Ja tak til nyhedsbrev</label>
+</div>
+
+ <div class="flex justify-center" x-data>
+        <button type="submit" class="bg-[#272635] hover:bg-[#585676] text-[#E8E9F3] px-8 py-2 rounded-md" x-on:click="alert('Din bestilling er modtaget')">Køb</button>
+      </div>
+
+        </form>
+        </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/alpine.min.js" defer></script>
+
+</section>

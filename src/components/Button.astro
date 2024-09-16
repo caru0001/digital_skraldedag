@@ -1,0 +1,7 @@
+---
+import '../styles/tailwind.css';
+const { href } = Astro.props;
+---
+
+<a href={href} class="bg-[#272635] hover:bg-[#585676] text-[#E8E9F3] py-3 px-9 rounded-2xl transition-colors duration-300 inline-block"><slot />
+</a>

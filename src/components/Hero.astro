@@ -1,0 +1,34 @@
+---
+import '../styles/tailwind.css';
+import { Image } from "astro:assets";
+import img from '../assets/imgs_from_book/_6090016.jpeg';
+import Button from '../components/Button.astro'
+import 'animate.css';
+---
+
+<section id="hero">
+<div class="lg:grid grid-cols-2 gap-4">
+<div>
+  <Image src={img} alt="Photo"/>
+</div>
+<div>
+<h1 class="text-4xl font-bold mb-4 lg:mt-0 mt-4">Københavnerbilleder - en guide til hipster foto</h1>
+<p class="mb-2">af Sten Simons</p>
+<p class="mb-6">Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!</p>
+<div class="animate__animated animate__headShake buttonanimation"><Button href="#buy">Køb nu</Button></div>
+</div>
+</div>
+
+<script>
+import { inView } from "motion";
+
+const pulse = document.querySelector(".buttonanimation");
+
+inView(pulse, () => {
+
+pulse.classList.add("animate__headShake", "animate__animated", "animate__delay-1s", "animate__infinite");
+
+});
+
+</script>
+</section>
