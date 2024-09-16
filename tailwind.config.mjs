@@ -3,7 +3,13 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"],
+        segoe: ["Segoe UI", "sans-serif"],
+      },
+      fontSize: {
+        "88px": "88px",
+      },
+      fontFamily: {
+        helvetica: ["Helvetica", "sans-serif"],
       },
     },
   },
