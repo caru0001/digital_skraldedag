@@ -5,9 +5,6 @@ export default {
       fontFamily: {
         segoe: ["Segoe UI", "sans-serif"],
       },
-      fontSize: {
-        "88px": "88px",
-      },
       fontFamily: {
         helvetica: ["Helvetica", "sans-serif"],
       },
