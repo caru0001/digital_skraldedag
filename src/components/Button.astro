@@ -3,5 +3,5 @@ import '../styles/tailwind.css';
 const { href } = Astro.props;
 ---
 
-<a href={href} class="bg-[#B7D6BD] hover:bg-[#585676] text-[#1F2D21] py-3 px-9 rounded-2xl transition-colors duration-300 inline-block font-semibold"><slot />
+<a href={href} class="bg-[#B7D6BD] hover:opacity-70 text-[#1F2D21] py-3 px-9 rounded-2xl transition-opacity duration-300 inline-block font-semibold cursor-pointer"><slot />
 </a>

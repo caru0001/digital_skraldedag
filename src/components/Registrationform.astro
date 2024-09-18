@@ -1,0 +1,86 @@
+---
+import '../styles/tailwind.css';
+import { Image } from "astro:assets";
+import illustration from '../assets/illustrations/globe.webp';
+import Link from './Link.astro';
+---
+
+<section id="form" class="max-w-5xl mx-auto pt-8 px-4 mb-16">
+
+    <div class="lg:grid grid-cols-2 gap-4">
+
+<div id="theillustration">
+    <h2 class="text-4xl font-semibold pb-6 pt-8 text-[#B7D6BD]">Registrer dit bidrag</h2>
+<p class="pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nobis eum dolores corrupti, fugit voluptas quibusdam, aliquam distinctio id quam earum obcaecati iusto exercitationem error atque? Unde accusamus officiis voluptatum.</p>
+<h4 class="mb-2 font-bold pb-4 text-[#B7D6BD]">Er du i tvivl om, hvordan du ser, hvor meget du har ryddet op?</h4>
+<p class="flex gap-2 pb-4">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#C68958" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+</svg>
+    Læs mere her om hvordan du ser hvor mange GB du har i din mail indbakke</p>
+<p class="flex gap-2 pb-8">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#C68958" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+</svg>
+
+    Læs mere her om hvordan du ser hvor mange GB X</p>
+  <Image src={illustration} alt="Photo" class="w-80 h-auto place-items-center"/>
+</div>
+
+<div id="theform">
+
+<section class="p-8 max-w-lg mx-auto" x-data="{ before: 0, after: 0 }">
+  <form class="space-y-6">
+    <div>
+      <label for="firstname" class="block text-[#EBF4E9] mb-1">Fornavn *</label>
+      <input type="text" id="name" class="w-full border-t-0 border-r-0 border-l-0 border-b-2 border-[#EBF4E9] border-opacity-60 bg-transparent text-[#EBF4E9] p-2 focus:outline-none placeholder-opacity-40 placeholder-[#EBF4E9] focus:outline-none focus:ring-2 focus:ring-[#EBF4E9] focus:ring-opacity-60 focus:border-none" placeholder="Skriv dit fornavn">
+    </div>
+    <div>
+      <label for="lastname" class="block text-[#EBF4E9] mb-1">Efternavn *</label>
+      <input type="text" id="name" class="w-full border-t-0 border-r-0 border-l-0 border-b-2 border-[#EBF4E9] border-opacity-60 bg-transparent text-[#EBF4E9] p-2 focus:outline-none placeholder-opacity-40 placeholder-[#EBF4E9] focus:outline-none focus:ring-2 focus:ring-[#EBF4E9] focus:ring-opacity-60 focus:border-none" placeholder="Skriv dit efternavn">
+    </div>
+     <div>
+      <label for="email" class="block text-[#EBF4E9] mb-1">E-mailadresse *</label>
+      <input type="email" id="email" class="w-full border-t-0 border-r-0 border-l-0 border-b-2 border-[#EBF4E9] border-opacity-60 bg-transparent text-[#EBF4E9] p-2 focus:outline-none placeholder-opacity-40 placeholder-[#EBF4E9] focus:outline-none focus:ring-2 focus:ring-[#EBF4E9] focus:ring-opacity-60 focus:border-none" placeholder="Skriv din email">
+    </div>
+     <div>
+      <label for="email" class="block text-[#EBF4E9] mb-1">Navn på organisation (valgfrit)</label>
+      <input type="email" id="email" class="w-full border-t-0 border-r-0 border-l-0 border-b-2 border-[#EBF4E9] border-opacity-60 bg-transparent text-[#EBF4E9] p-2 focus:outline-none placeholder-opacity-40 placeholder-[#EBF4E9] focus:outline-none focus:ring-2 focus:ring-[#EBF4E9] focus:ring-opacity-60 focus:border-none" placeholder="Skriv din organisation">
+    </div>
+    
+    <div>
+      <label for="before" class="block text-[#EBF4E9] mb-1">Mængde før oprydning (GB)</label>
+      <input type="number" id="before" x-model="before" class="w-full border-2 border-[#EBF4E9] border-opacity-60 bg-transparent text-[#EBF4E9] p-2 focus:outline-none placeholder-opacity-40 placeholder-[#EBF4E9] focus:outline-none focus:ring-2 focus:ring-[#EBF4E9] focus:ring-opacity-60 focus:border-none" placeholder="Enter GB">
+    </div>
+    <div>
+      <label for="after" class="block text-[#EBF4E9] mb-1">Mængde efter oprydning (GB)</label>
+      <input type="number" id="after" x-model="after" class="w-full border-2 border-[#EBF4E9] border-opacity-60 bg-transparent text-[#EBF4E9] p-2 focus:outline-none placeholder-opacity-40 placeholder-[#EBF4E9] focus:outline-none focus:ring-2 focus:ring-[#EBF4E9] focus:ring-opacity-60 focus:border-none" placeholder="Enter GB">
+    </div>
+    <div class="mt-4 text-[#EBF4E9]">
+      Du har ryddet <span x-text="(before > 0 ? ((before - after) / before) * 100 : 0).toFixed(2) + '%'" class="text-[#C68958] font-bold"></span> af dit digitale skrald op!
+    </div>
+    <div class="pt-6">
+        <label for="agreement" class="block text-[#EBF4E9] mb-1 flex items-center space-x-2">
+          <input type="checkbox" id="agreement" class="form-checkbox text-[#6A9273]" required>
+          <span>Jeg er enig med Let's Do It, Worlds <a href="https://www.digitalcleanupday.org/terms-conditions" class="underline text-[#5C91A4]">vilkår og betingelser</a></span>
+        </label>
+      </div>
+      <div>
+        <label for="agreement" class="block text-[#EBF4E9] mb-1 flex items-center space-x-2">
+          <input type="checkbox" id="agreement" class="form-checkbox text-[#6A9273]" required>
+          <span>Jeg vil gerne modtage nyheder om Digital skraldedag</span>
+        </label>
+      </div>
+    <button type="submit" class="bg-[#B7D6BD] hover:opacity-70 text-[#1F2D21] font-semibold py-3 px-9 rounded-2xl transition-opacity duration-300 inline-block flex items-center gap-2">
+      Registrer bidrag
+    </button>
+  </form>
+</section>
+
+</div>
+
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/alpine.min.js" defer></script>
+
+</section>

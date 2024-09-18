@@ -7,15 +7,15 @@ import Button from '../components/Button.astro'
 <div x-data="{ showmenu: false }" class="px-8 pb-2 pt-2 static md:static w-full bg-[#1F2D21]" >
 <div id="navbar" class="flex flex-row justify-between bg-[#1F2D21]">
 <div id="logo" class="flex items-center py-2">
-      <a href="#hero">
+      <a href="/">
         <Image src={logo} alt="logo" class="w-10 h-auto" />
       </a>
     </div>
 <nav id="desktopmenu" class="hidden md:block">
-<ul class="flex flex-row gap-12 items-center font-medium text-[#FFFFFF]">
-<li class="py-2"><a href="#data" >Sådan deltager du</a></li>
-<li class="py-2"><a href="#chapters" >Ressourcer</a></li>
-<li class="py-2"><a href="#author" ><Button>Registrer dit bidrag</Button></a></li>
+<ul class="flex flex-row gap-12 items-center font-medium text-[#FFFFFF] ">
+<li class="py-2 hover:opacity-70 transition-opacity"><a href="/howto" >Sådan deltager du</a></li>
+<li class="py-2 hover:opacity-70 transition-opacity"><a href="/ressources" >Ressourcer</a></li>
+<li class="py-2"><a href="/form" class="bg-[#B7D6BD] hover:opacity-70 text-[#1F2D21] py-3 px-9 rounded-2xl transition-opacity duration-300 inline-block font-semibold cursor-pointer">Registrer dit bidrag</a></li>
 </ul>
 </nav>
 <button id="burgermenu" class="md:hidden mr-4" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
