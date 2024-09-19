@@ -3,12 +3,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        segoe: ["Segoe UI", "sans-serif"],
-      },
-      fontFamily: {
         helvetica: ["Helvetica", "sans-serif"],
       },
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
+  plugins: [require("@tailwindcss/typography"), 
+    require("@tailwindcss/forms"), 
+    require("@tailwindcss/aspect-ratio"), 
+    require("@tailwindcss/container-queries")],
 };

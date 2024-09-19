@@ -1,7 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import logo from '../assets/illustrations/logo_hvid_crop.webp';
-import Button from '../components/Button.astro'
 ---
 
 <div x-data="{ showmenu: false }" class="px-8 pb-2 pt-2 static md:static w-full bg-[#1F2D21]" >
@@ -12,10 +11,10 @@ import Button from '../components/Button.astro'
       </a>
     </div>
 <nav id="desktopmenu" class="hidden md:block">
-<ul class="flex flex-row gap-14 items-center font-medium text-[#FFFFFF] ">
-<li class="py-2 hover:opacity-70 transition-opacity"><a href="/" >Forside</a></li>
-<li class="py-2 hover:opacity-70 transition-opacity"><a href="/ressources" >Sådan deltager du</a></li>
-<li class="py-2"><a href="/form" class="bg-[#B7D6BD] hover:opacity-70 text-[#1F2D21] py-3 px-9 rounded-2xl transition-opacity duration-300 inline-block font-semibold cursor-pointer">Registrer dit bidrag</a></li>
+<ul class="flex flex-row gap-14 items-center">
+<li class="py-2"><a href="/" class="no-underline text-[#EBF4E9]">Forside</a></li>
+<li class="py-2"><a href="/ressources" class="no-underline text-[#EBF4E9]">Sådan deltager du</a></li>
+<li class="py-2"><a href="/form" class="bg-[#B7D6BD] hover:opacity-70 text-[#1F2D21] py-3 px-9 rounded-2xl transition-opacity duration-300 inline-block font-semibold cursor-pointer no-underline">Registrer dit bidrag</a></li>
 </ul>
 </nav>
 <button id="burgermenu" class="md:hidden mr-4" x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
