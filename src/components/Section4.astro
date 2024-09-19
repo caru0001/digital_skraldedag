@@ -1,18 +1,31 @@
 ---
 import '../styles/tailwind.css';
 import { Image } from "astro:assets";
-import illustration from '../assets/illustrations/globe.webp';
+import facebook from '../assets/illustrations/facebook1.svg';
+import instagram from '../assets/illustrations/instagram1.svg';
+import linkedin from '../assets/illustrations/linkedin1.svg';
+import x from '../assets/illustrations/x1.svg';
 ---
 
-<section class="">
+<section>
     
     <div class="max-w-5xl mx-auto pt-8 px-4 pb-12">
-        <h2 class="text-4xl font-semibold pb-6 pt-8 text-[#B7D6BD] mb-2">Registrer dit bidrag</h2>
- <div class="pt-4 sm:grid grid-cols-2 gap-8 mb-8">
+        <h2 class="text-4xl font-semibold pb-6 pt-8 text-[#B7D6BD] mb-2">Tag del i forandringen</h2>
+ <div class="pt-4 sm:grid grid-cols-2 gap-20 mb-8">
 <div>
-    <p>Tilmeld dig</p>
+    <p class="mb-4">Bliv en del af en global bevægelse for at reducere digitalt affald og CO2-udledning. Ved at registrere dit bidrag til Digital Skraldedag, hjælper du med at skabe en mere bæredygtig fremtid for vores digitale verden. Din indsats tæller – hver handling, stor som lille, gør en forskel!</p>
+     <p class="mb-10">Er du klar til at tage skridtet mod en renere digital fremtid? Tilmeld dig nu og vær med til at gøre en konkret forskel.</p>
+<div class="flex items-center justify-center mb-10"><a href="/form" class="bg-[#B7D6BD] no-underline hover:opacity-70 text-[#1F2D21] font-semibold py-3 px-9 rounded-2xl transition-opacity duration-300 inline-block ">Registrer her</a></div>
 </div>
-<div class="bg-[#C68958] text-[#1F2D21]"><p>Spred budskabet!</p><p>Vær med til at sprede budskabet og del med en ven eller på sociale medier.</p></div>
+<div class="bg-[#DEB1B1] p-8 rounded-3xl"><p class="text-[#1F2D21] text-2xl font-semibold mb-4">Spred budskabet!</p><p class="text-[#1F2D21]">Vær med til at bekæmpe digitalt skrald! Del vores budskab med venner og på sociale medier, og lad os sammen gøre en forskel for en renere digital verden.</p>
+<div class="flex justify-center gap-4 pt-4">
+<Image src={facebook} alt="facebook" class="w-12 h-auto"/>
+<Image src={instagram} alt="instagram" class="w-12 h-auto"/>
+<Image src={linkedin} alt="linkedin" class="w-12 h-auto"/>
+<Image src={x} alt="x" class="w-12 h-auto"/>
+ </div>
+</div>
+
  </div>
 
 </section>

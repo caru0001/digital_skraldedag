@@ -5,3 +5,7 @@
 a {
   @apply text-[#DEB1B1] underline hover:opacity-80 transition-opacity transition-colors;
 }
+
+p {
+  @apply text-[#EBF4E9];
+}
