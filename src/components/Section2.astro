@@ -1,15 +1,56 @@
 ---
 import '../styles/tailwind.css';
 import { Image } from "astro:assets";
-import illustration from '../assets/illustrations/globe.webp';
+import spammail from '../assets/illustrations/spammail1.svg'
+import forestfire from '../assets/illustrations/forestfire1.svg'
+import internet from '../assets/illustrations/internet.svg'
+import car from '../assets/illustrations/car.svg'
+import server from '../assets/illustrations/server1.svg'
+import country from '../assets/illustrations/country1.svg'
 ---
 
-<section class="">
+<section class="max-w-5xl mx-auto pt-8 px-4 pb-2">
     
-    <div class="max-w-5xl mx-auto pt-8 px-4 pb-12">
-        <h2 class="text-4xl font-semibold pb-6 pt-8 text-[#B7D6BD] mb-2">Problemet med digitalt skrald</h2>
- <div class="pt-4">
+        <h2 class="text-4xl font-semibold pb-10 pt-8 text-[#B7D6BD] mb-2">Problemet med digitalt skrald</h2>
 
- </div>
+
+<div class="md:grid grid-cols-3 gap-20 pb-2">
+
+    <div class="flex flex-col items-center h-full pb-14">
+        <div>
+        <div class="flex justify-center">
+        <Image src={spammail} alt="Illustration" class="w-40 h-auto place-items-center"/></div>
+<p class="p-2">320 milliarder e-mails sendes hver dag, og 62 billioner spam e-mails hvert år = 20 millioner tons CO2!</p>
+     <div class="flex justify-center">
+        <Image src={forestfire} alt="Illustration" class="w-40 h-auto place-items-center pt-4"/></div>
+<p class="p-2">Det er det samme som at brænde 100 millioner træer.</p>
+</div>
+</div>
+
+ <div class="flex flex-col items-center h-full pb-14">
+        <div>
+        <div class="flex justify-center">
+        <Image src={internet} alt="Illustration" class="w-40 h-auto place-items-center"/></div>
+<p class="pb-2">Vores brug af internettet producerer mere end 900 millioner tons CO2 hvert år!</p>
+     <div class="flex justify-center">
+        <Image src={car} alt="Illustration" class="w-40 h-auto place-items-center pt-4"/></div>
+<p class="p-2">Det svarer til den årlige CO2-udledning fra 193 millioner biler, der kører året rundt</p>
+</div>
+</div>
+
+ <div class="flex flex-col items-center h-full pb-8">
+        <div>
+        <div class="flex justify-center">
+        <Image src={server} alt="Illustration" class="w-40 h-auto place-items-center"/></div>
+<p class="pb-2">I 2022 brugte vi 70 millioner servere til dataopbevaring. Hver forårsagede 1-2 tons produktion af CO2.</p>
+     <div class="flex justify-center">
+        <Image src={country} alt="Illustration" class="w-40 h-auto place-items-center pt-4"/></div>
+<p class="p-2">Det svarer til CO2-aftrykket fra lande som Grækenland eller Finland.</p>
+</div>
+</div>
+</div>
+
+</div>
 
 </section>
+

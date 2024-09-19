@@ -1,7 +1,7 @@
 ---
 import '../styles/tailwind.css';
 import { Image } from "astro:assets";
-import illustration from '../assets/illustrations/globe.webp';
+import illustration from '../assets/illustrations/greencomputer.svg';
 import Link from './Link.astro';
 ---
 
@@ -31,8 +31,8 @@ import Link from './Link.astro';
 
 <p><a href="https://drive.google.com/file/d/1Capnwt-idzQoVtV1jNTM2HeJnvYVNQIi/view" target="_blank" class="gap-0 pb-0">Læs mere</a> om, hvordan du rydder op i din mailindbakke.</p></div>
 
-
-  <Image src={illustration} alt="Photo" class="w-80 h-auto place-items-center"/>
+<div class="flex justify-center items-center mb-12 lg:mb-0"><Image src={illustration} alt="Photo" class="w-52 h-auto"/>
+</div>
 </div>
 
 <div id="theform">
@@ -79,8 +79,8 @@ import Link from './Link.astro';
           <span>Jeg vil gerne modtage nyheder om Digital skraldedag</span>
         </label>
       </div>
-      <div class="flex justify-center pt-2 pb-4">
-    <button type="submit" class="bg-[#B7D6BD] hover:opacity-70 text-[#1F2D21] font-semibold py-3 px-9 rounded-2xl transition-opacity duration-300 ">
+      <div class="flex justify-center pt-2 pb-4" x-data>
+    <button type="submit" class="bg-[#B7D6BD] hover:opacity-70 text-[#1F2D21] font-semibold py-3 px-9 rounded-2xl transition-opacity duration-300" x-on:click="alert('Tak for dit bidrag! 💚 Stay green 💚')">
       Registrer bidrag
     </button></div>
   </form>
@@ -88,8 +88,9 @@ import Link from './Link.astro';
 
 </div>
 
-    </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/alpine.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/alpine.min.js" defer>
+  </script>
 
 </section>
